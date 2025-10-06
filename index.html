@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anniversary Super Skanesa ke-3 | Pemesanan Tiket</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Super Skanesa" class="logo" />
+    <h1>🎉 Anniversary Super Skanesa ke-3</h1>
+    <p>Pesan tiketmu sekarang hanya Rp 20.000/orang!</p>
+  </header>
+
+  <section class="form-container">
+    <form id="tiketForm">
+      <label>Nama Lengkap:</label>
+      <input type="text" id="nama" required placeholder="Masukkan nama lengkapmu" />
+
+      <label>Email:</label>
+      <input type="email" id="email" required placeholder="contoh@email.com" />
+
+      <label>Jumlah Tiket:</label>
+      <input type="number" id="jumlah" min="1" max="10" value="1" required />
+
+      <button type="submit">🎟 Buat Tiket</button>
+    </form>
+
+    <div id="hasil" class="hasil"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Super Skanesa Event | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrious/dist/qrious.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
